@@ -115,7 +115,7 @@ First, you'll need an Azure Automation account to run the PowerShell runbook. He
 
 ## Create an Azure Automation Run As account
 
-Now that you have an Azure Automation account, you'll also need to create an Azure Automation Run As account to access your Azure resources.
+Now that you have an Azure Automation account, you'll also need to create an Azure Automation Run As account to access your Azure resources. //Optional if you have an existing AzureRunAsAccount
 
 An [Azure Automation Run As account](../../automation/manage-runas-account.md) provides authentication for managing resources in Azure with the Azure cmdlets. When you create a Run As account, it creates a new service principal user in Azure Active Directory and assigns the Contributor role to the service principal user at the subscription level, the Azure Run As Account is a great way to authenticate securely with certificates and a service principal name without needing to store a username and password in a credential object. To learn more about Run As authentication, see [Limit Run As account permissions](../../automation/manage-runas-account.md#limit-run-as-account-permissions).
 
